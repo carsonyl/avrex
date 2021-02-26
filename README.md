@@ -10,6 +10,10 @@ exported for backup, automation, analysis, and transformation.
 
 ## Installation
 
+`pip install avrex`
+
+Supports Python 3.5+. Tested on Python 3.9.
+
 ## Usage
 
 For all operations, avrex needs the URL for the AssociationVoice site's login page,
