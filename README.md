@@ -1,5 +1,6 @@
 # avrex: AssociationVoice reports exporter
 
+[![PyPI](https://img.shields.io/pypi/v/avrex.svg?maxAge=2592000)](https://pypi.org/project/avrex)
 [![tests](https://github.com/carsonyl/avrex/actions/workflows/tests.yml/badge.svg)](https://github.com/carsonyl/avrex/actions/workflows/tests.yml)
 
 avrex is a Python library and command-line tool for downloading reports
