@@ -35,6 +35,7 @@ def test_missing_args():
             AssociationVoiceApi()
 
 
+@pytest.mark.live
 def test_list_reports(valid_api):
     reports = valid_api.list_reports()
     assert reports
@@ -52,6 +53,7 @@ def test_list_reports(valid_api):
         pytest.param(4, 2, marks=pytest.mark.xfail(reason="Only blocked in GUI")),  # Disallowed format for report
     ],
 )
+@pytest.mark.live
 def test_download_report_invalid(valid_api, tmp_path, report_id, format_id):
     with pytest.raises(KeyError):
         valid_api.download_report(report_id, None, None, format_id, tmp_path / "foo.dat")
@@ -65,6 +67,7 @@ def test_download_report_invalid(valid_api, tmp_path, report_id, format_id):
         (3, "2020-01-01", "2020-02-01", 2),
     ],
 )
+@pytest.mark.live
 def test_download_report(valid_api, tmp_path, report_id, from_date, to_date, format_id):
     with open(tmp_path / "foo.dat", "wb") as outf:
         valid_api.download_report(report_id, from_date, to_date, format_id, outf)

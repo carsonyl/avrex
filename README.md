@@ -12,7 +12,7 @@ exported for backup, automation, analysis, and transformation.
 
 `pip install avrex`
 
-Supports Python 3.5+. Tested on Python 3.9.
+Supports Python 3.7+. Tested on Python 3.9.
 
 ## Usage
 
