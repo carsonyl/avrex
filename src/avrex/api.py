@@ -1,7 +1,7 @@
 import os
 from collections import OrderedDict
 from datetime import date
-from typing import Union
+from typing import Union, List
 from urllib.parse import urlparse, parse_qs, urljoin
 
 import bs4
@@ -14,7 +14,7 @@ class LoginError(Exception):
         super(LoginError, self).__init__(msg)
 
 
-def _get_options_map(options: list[bs4.element.Tag]) -> OrderedDict:
+def _get_options_map(options: List[bs4.element.Tag]) -> OrderedDict:
     """
     Given a list of `<option>` tags, return a mapping of option value to label.
     Empty options or options with value of "0" are excluded.

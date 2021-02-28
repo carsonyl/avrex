@@ -1,5 +1,7 @@
 # avrex: AssociationVoice reports exporter
 
+[![tests](https://github.com/carsonyl/avrex/actions/workflows/tests.yml/badge.svg)](https://github.com/carsonyl/avrex/actions/workflows/tests.yml)
+
 avrex is a Python library and command-line tool for downloading reports
 off websites hosted by [AssociationVoice](https://associationvoice.com/).
 AssociationVoice provides websites for property management, and may be used
